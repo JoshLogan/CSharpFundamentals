@@ -17,19 +17,43 @@ namespace Classwork
             MyHouseResults();
             myNumericExamples();
         }
-        
-        static void myNumericExamples()
-        (
-            NumericTypes myTypes = new NumericTypes();
-            myTypes.getsomeType();
-        )
 
-        (
+        static void myNumericExamples()
+        {
+            NumericTypes myTypes = new NumericTypes();
+            myTypes.GetSomeType();
+
+
+
             int something = myTypes.ConvertFloattoInt(35.9F);
             Console.WriteLine(something);
 
             Console.WriteLine(myTypes.LongFromInt(5600));
-        )
+            myTypes.Basicmath();
+            myTypes.CheckOperators();
+            myTypes.IncrementDecrement();
+            myTypes.specialvalues();
+            myTypes.ComparisonOperators();
+            myTypes.OtherOperators();
+        }
+
+        static void OtherNumericExamples()
+        {
+            NumericTypes myTypes = new NumericTypes();
+            myTypes.OtherOperators();
+        }
+
+        public void IncrementDecrement()
+        {
+
+            int myvalue = 13, myother = 10;
+            //myvalue = myvalue +1
+            Console.WriteLine(myvalue++);
+            //myother = myother -1
+            Console.WriteLine(myother--);
+            Console.WriteLine(--myvalue);
+            Console.WriteLine(++myother);
+        }
         static void MyHouseResults()
         // Created an object instance of house called myHouse
 
@@ -38,7 +62,7 @@ namespace Classwork
             //This sets the value of Red to the object
             myHouse.PaintDoor = "Red";
             myHouse.CloseDoor(); // the door closes 
-                     //This gets the value of Green  from the object
+                                 //This gets the value of Green  from the object
             Console.WriteLine(myHouse.PaintDoor); // red
                                                   //This is the second object instance of House
             House mySecondHouse = new House();
@@ -47,19 +71,5 @@ namespace Classwork
 
             Console.WriteLine(myHouse.PaintDoor); // red
         }
-    
-            // Method to demonstrate an Explicit cast from float to int...
-            public int ConvertFloattoInt (float value);
-            (
-                int total = (int)values;
-                return total;
-            )
-
-            // Method to demonstrate an Explicit cast from int to long
-            public long LongFromInt (long value);
-            (
-                long total = value;
-                return total;
-            )
-
+    }
 }
