@@ -1,6 +1,7 @@
 ﻿using System;
 using Lessons;
 
+
 //This namespace represents the folder the class is in.
 namespace Classwork
 {
@@ -14,9 +15,33 @@ namespace Classwork
 
             //Console.WriteLine("Hello World!");
             //console is a class. writeline is a method with parameter.
-            MyHouseResults();
-            myNumericExamples();
+            //MyHouseResults();
+            //myNumericExamples();
+            myStringExamples();
+
         }
+
+
+        static void myStringExamples()
+
+
+        {
+            StringTypes myTypes = new StringTypes();
+            myTypes.SampleString();
+            myTypes.AddString();
+            string words = myTypes.StringBuilderExample("Hello", "C Sharp", "Class");
+
+            Console.WriteLine(words);
+            myTypes.CharTypeExample();
+            myTypes.EscapeExample();
+            myTypes.PlaceholderExample();
+            myTypes.ArraySample();
+            myTypes.myHouseArray();
+            myTypes.MultiArraySample();
+            
+        }
+
+
 
         static void myNumericExamples()
         {
@@ -37,11 +62,17 @@ namespace Classwork
             myTypes.OtherOperators();
         }
 
+
+
+
         static void OtherNumericExamples()
         {
             NumericTypes myTypes = new NumericTypes();
             myTypes.OtherOperators();
+
         }
+
+
 
         public void IncrementDecrement()
         {

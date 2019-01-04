@@ -11,29 +11,39 @@ namespace Classwork
         string _ProcessorSpeed;
 
         //Auto property
-        public string RAM {get; set;}
-        public string OS {get; set;}
-       
+        public string RAM { get; set; }
+        public string OS { get; set; }
+
         //Standard longway
-        public string ProcessorSpeed {
-        get {
-            return _ProcessorSpeed;}
-        set {
-            this._ProcessorSpeed = value;}
+        public string ProcessorSpeed
+        {
+            get
+            {
+                return _ProcessorSpeed;
+            }
+            set
+            {
+                this._ProcessorSpeed = value;
+            }
         }
 
-        public string VideoResolution {
-        get {
-            return _VideoResolution;}
-        set {
-            this._VideoResolution = value;}
+        public string VideoResolution
+        {
+            get
+            {
+                return _VideoResolution;
+            }
+            set
+            {
+                this._VideoResolution = value;
+            }
         }
         //The following are methods.
         public void TurnOff()
         {
 
         }
-            public void TurnOn()
+        public void TurnOn()
         {
 
         }
