@@ -37,7 +37,6 @@ namespace Lessons
         {
             char ab = 'A';
             char de = 'B';
-            char fg = '\x0058'; // Hexidecimal
             char copyrightSymbol = '\u00A9';
             char hi = (char)88; // Explicit Case
 
@@ -95,7 +94,7 @@ namespace Lessons
         public void MultiArraySample()
         
         {
-            int[,] myMultiArray = new int[2, 2];
+            int[,] myIntArray = new int[2, 2];
             myIntArray[0, 0] = 5;
             myIntArray[0, 1] = 10;
             myIntArray[1, 0] = 2;

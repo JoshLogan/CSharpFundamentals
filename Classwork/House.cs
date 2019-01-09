@@ -21,8 +21,8 @@ namespace Classwork
                 this._foundation = value;
             }
         }
- 
-     public string Windows
+
+        public string Windows
         {
             get
             {
@@ -35,10 +35,11 @@ namespace Classwork
         }
         public string Roof { get; set; }
 
-        public string PaintDoor {
+        public string PaintDoor
+        {
             get
             {
-            return _paintdoor;   
+                return _paintdoor;
             }
             set
             {
@@ -46,18 +47,44 @@ namespace Classwork
             }
         }
 
-        //The following are methods.
-        public void OpenDoor()
-        {
-            Console.WriteLine("tits!");
-        }
-        public void CloseDoor()
-        {
-           Console.WriteLine("Boobs!"); 
+        public House() { }
 
+        public House(string foundation, string window)
+        {
+            this._foundation = foundation;
+            this._windows = window;
+            this.Roof = "Shingles";
+            this.PaintDoor = "Green";
+        }
+        
+        public House(string foundation, string window, string roof, string doorPaint)
+        {
+            this._foundation = foundation;
+            this._windows = window;
+            Roof = roof;
+            PaintDoor = doorPaint;
         }
 
+        public void OpenDoor(bool isExterior)
+        {
+            if (isExterior)
+            {
+                Console.WriteLine("Open front door");
+            }
+            else
+            {
+                Console.WriteLine("Open bedroom door");
+            }
+        }
+//The following are methods.
+    public void OpenDoor()
+    {
+        Console.WriteLine("tits!");
+    }
+    public void CloseDoor()
+    {
+        Console.WriteLine("Boobs!");
 
     }
+ }
 }
-    

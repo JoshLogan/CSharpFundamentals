@@ -47,5 +47,27 @@ namespace Classwork
         {
 
         }
+
+        public Computer() {}
+
+        public Computer(string _RAM, string _OS)
+        {
+            this._RAM = RAM;
+            this._OS = OS;
+            VideoResolution = "VR";
+            ProcessorSpeed = "PS";
+        }
+
+        public void TurnOn(bool IsOn)
+        {
+            if (IsOn)
+            {
+                Console.WriteLine("Computer is powered on");
+            }
+            else
+            {
+                Console.WriteLine("Computer is turned off");
+            }
+        }
     }
 }

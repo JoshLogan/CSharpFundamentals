@@ -111,7 +111,7 @@ namespace Lessons
 
         public void ComparisonOperators()
         {
-            bool isCool = true; //declartion of a bool value
+            bool IsCool = true; //declartion of a bool value
 
             int x = 3, y = 5, z = 3;
 

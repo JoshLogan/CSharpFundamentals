@@ -17,9 +17,13 @@ namespace Classwork
             //console is a class. writeline is a method with parameter.
             //MyHouseResults();
             //myNumericExamples();
-            myStringExamples();
-
+            //myStringExamples();
+            StatementSamples();
+            StructSample();
+            HouseSamples();
+            ComputerSample();
         }
+
 
 
         static void myStringExamples()
@@ -38,7 +42,7 @@ namespace Classwork
             myTypes.ArraySample();
             myTypes.myHouseArray();
             myTypes.MultiArraySample();
-            
+
         }
 
 
@@ -89,18 +93,74 @@ namespace Classwork
         // Created an object instance of house called myHouse
 
         {
-            House myHouse = new House();
+            //House myHouse = new House();
             //This sets the value of Red to the object
-            myHouse.PaintDoor = "Red";
-            myHouse.CloseDoor(); // the door closes 
+            //myHouse.PaintDoor = "Red";
+            //myHouse.CloseDoor(); // the door closes 
                                  //This gets the value of Green  from the object
-            Console.WriteLine(myHouse.PaintDoor); // red
+            //Console.WriteLine(myHouse.PaintDoor); // red
                                                   //This is the second object instance of House
-            House mySecondHouse = new House();
-            mySecondHouse.PaintDoor = "green";
-            Console.WriteLine(mySecondHouse.PaintDoor); // green
+            //House mySecondHouse = new House();
+            //mySecondHouse.PaintDoor = "green";
+            //Console.WriteLine(mySecondHouse.PaintDoor); // green
 
-            Console.WriteLine(myHouse.PaintDoor); // red
+            //Console.WriteLine(myHouse.PaintDoor); // red
+
+
+
+
+            // Console is a class, WriteLine is a method with a parameter
+            //Console.WriteLine("Hello World!");
+            //MyHouseResults();
+            //MyNumericExamples();
+            //OtherNumericExamples();
+            //MyStringExamples();
+        }
+
+        static void StructSample()
+
+        {
+            BookSample booksample = new BookSample(4.99m, "Zombie Fallout", "Mark Tofu");
+            Console.WriteLine("The book " + booksample.title + "By " + booksample.author + "is $" + booksample.price);
+        }
+
+        static void ComputerSample()
+        {
+
+        }
+        static void HouseSamples()
+        {
+            House myhouse = new House("concrete", "triple pane");
+            Console.WriteLine(myhouse.PaintDoor);
+            Console.WriteLine(myhouse.Foundation);
+            myhouse.OpenDoor(true);
+        }
+
+        static void StatementSamples()
+        {
+            StatementExamples se = new StatementExamples();
+            //se.SampleIf();
+            //se.SampleIfElse();
+            //se.SampleIfChain();
+            //se.SampleIfAnd();
+            //se.SampleIfOr();
+            //se.SampleConditional();
+            //se.SampleSwitch(10);
+            //se.SampleWhile();
+            //se.SampleDoWhile();
+            //se.SampleFor();
+            //se.SampleForEach();
+            //string myString = se.JumpStatementExample("Sunday");
+            //Console.WriteLine(myString);
+            // BottlesSong();
+
+            se.SampleDays(DaysOfWeek.Wed);
+        }
+        static void BottlesSong()
+        {
+            BottlesOfBeer beer = new BottlesOfBeer();
+            string song = beer.BottlesOfBeerSong();
+            Console.WriteLine(song);
         }
     }
 }
